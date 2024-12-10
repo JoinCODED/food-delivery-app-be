@@ -33,6 +33,7 @@ app.use("/api/resturant", resturantRouter);
 app.use("/api/item", itemRouter);
 
 //middlewares
+app.use('/media', express.static(path.join(__dirname, "media")));
 app.use(errorHandler);
 app.use(notFoundHandler);
 
